@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/3213fb97-7979-4095-a425-433f683f4783
 
 ## Screenshots
 
-<img width="1916" height="954" alt="Screenshot from 2025-11-19 05-14-19" src="https://github.com/user-attachments/assets/37793456-b755-4b65-b857-9577c8e7ff5f" />
+<img width="1916" height="954" alt="Inventory Management System" src="https://github.com/user-attachments/assets/37793456-b755-4b65-b857-9577c8e7ff5f" />
 
 ## Acknowledgments
 
