@@ -97,7 +97,11 @@ Inventory-Management-System/
 
 
 
-https://github.com/user-attachments/assets/3213fb97-7979-4095-a425-433f683f4783
+
+https://github.com/user-attachments/assets/0fe2e12a-9c42-44a5-a168-909980d8f7e9
+
+
+
 
 ## Screenshots
 
