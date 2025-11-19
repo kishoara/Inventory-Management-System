@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Reports - Inventory Management{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <h2>Inventory Reports</h2>
+</div>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <h3>Total Products</h3>
+        <p class="stat-number">{{ total_products }}</p>
+    </div>
+    
+    <div class="stat-card">
+        <h3>Total Inventory Value</h3>
+        <p class="stat-number">${{ "%.2f"|format(total_value) }}</p>
+    </div>
+    
+    <div class="stat-card">
+        <h3>Low Stock Items</h3>
+        <p class="stat-number">{{ low_stock|length }}</p>
+    </div>
+</div>
+
+<h3>Low Stock Products (Less than 5 units)</h3>
+
+{% if low_stock %}
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Stock Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in low_stock %}
+        <tr class="low-stock">
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>${{ "%.2f"|format(product.price) }}</td>
+            <td>{{ product.stock_quantity }}</td>
+            <td>
+                <a href="{{ url_for('update_product', id=product.id) }}" class="btn btn-small btn-primary">Restock</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+    <p>✓ All products are well stocked!</p>
+</div>
+{% endif %}
+
+<div class="form-actions">
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Products</a>
+</div>
+{% endblock %}
