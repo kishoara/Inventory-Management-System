@@ -95,23 +95,13 @@ Inventory-Management-System/
 
 ## Demo
 
-[Add your demo video here]
+
+
+https://github.com/user-attachments/assets/3213fb97-7979-4095-a425-433f683f4783
 
 ## Screenshots
 
-
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Your Name - [Your GitHub Profile](https://github.com/yourusername)
+<img width="1916" height="954" alt="Screenshot from 2025-11-19 05-14-19" src="https://github.com/user-attachments/assets/37793456-b755-4b65-b857-9577c8e7ff5f" />
 
 ## Acknowledgments
 
